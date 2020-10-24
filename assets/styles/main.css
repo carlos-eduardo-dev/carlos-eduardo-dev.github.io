@@ -9,6 +9,18 @@
 
 :root {
     font-size: clamp(42.5%, 0.58vw, 62.5%);
+    
+    --bg-body-ligth-color: #ddd;
+    --bg-sections-ligth-color: #fff;
+    --txt-ligth-color: #252525;
+    
+    --bg-body-dark-color: #252525;
+    --bg-sections-dark-color: #303030;
+    --txt-dark-color: #ddd;
+    
+    --bg-body-color: var(--bg-body-ligth-color);
+    --bg-sections-color: var(--bg-sections-ligth-color);
+    --txt-color: var(--txt-ligth-color);
 }
 
 html {
@@ -16,9 +28,9 @@ html {
 }
 
 body {
-    background-color: #252525;
+    background-color: var(--bg-body-color);
 
-    color: #ddd;
+    color: var(--txt-color);
 
     display: flex;
     flex-direction: column;

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/assets/styles/main.css" />
     <link rel="stylesheet" href="/assets/styles/aside.css">
     <link rel="stylesheet" href="/assets/styles/sections.css">
+    <link rel="stylesheet" href="/assets/styles/themeButton.css">
+    <script src="/assets/scripts//changeTheme.js"></script>
 </head>
 
 <body>
@@ -75,13 +77,20 @@
                 </div>
             </div>
         </aside>
+        <div class="darkmode-toggle">
+            <label>
+                <input type="checkbox" name="button-mode-toggle" id="button-mode-toggle" onclick="changeTheme(event)" data-theme="ligth">
+                <span class="check"></span>
+            </label>
+        </div>
     </header>
     <main id="main-container">
         <div id="about" class="center-x center-y">
             <div class="sections profile ">
                 <div class="profile-text center-y">
                     <h2>Hello, World!</h2>
-                    <p>My name is Carlos Eduardo Vicente dos Santos and I am a student of Software Engineering at the Federal University of Goiás (UFG)</p>
+                    <p>My name is Carlos Eduardo Vicente dos Santos and I am a student of Software Engineering at the
+                        Federal University of Goiás (UFG)</p>
                 </div>
                 <div class="center-x center-y">
                     <img src="https://avatars2.githubusercontent.com/u/64539355?s=460&u=767e81b2520e99d443bfa0ea76e7d85e713bed07&v=4"
